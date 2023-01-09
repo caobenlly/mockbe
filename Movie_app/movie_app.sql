@@ -22,7 +22,7 @@ insert into `movies_slider` (`name`,`overview`, `backdrop_path`, `video_url`) va
 
 create table type_movie(
 	`type_id` bigint not null auto_increment,
-    `type_name` enum('popular', 'top_rated', 'trending', 'comedy'),
+    `type_name` text,
     primary key(`type_id`));
     
 insert into type_movie(`type_name`) values('popular');
